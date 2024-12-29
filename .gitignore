@@ -1,41 +1,34 @@
-# Compiled Lua sources
-luac.out
+# https://git-scm.com/docs/gitignore
+# https://jasonstitt.com/gitignore-whitelisting-patterns
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+# Ignore everything
+*
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+# But descend into directories
+!*/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Keep these special files
+!licence.txt
+!readme.md
+!changelog.txt
+!attribution.txt
+!.gitignore
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+# Keep text files
+!*.lua
+!*.cfg
+!*.json
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Keep assets
+!*.png
+!*.ogg
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
+# Block underscore prefixed files
+_*
+
+# Keep everything in modportal (why was this broken?)
+!/modportal/**
+
+# But keep special files
+!__init__.lua
