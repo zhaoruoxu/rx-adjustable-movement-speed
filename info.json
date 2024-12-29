@@ -1,0 +1,13 @@
+{
+    "title"            : "Adjustable Movement Speed",
+    "name"             : "rx-adjustable-movement-speed",
+    "author"           : "rx",
+    "version"          : "0.1.0",
+    "factorio_version" : "2.0",
+    "contact"          : "github.com/zhaoruoxu",
+    "license"          : "MIT license",
+    "description"      : "Adjustable player movement speed",
+    "dependencies"     : [
+      "base >= 2.0"
+    ]
+  }
