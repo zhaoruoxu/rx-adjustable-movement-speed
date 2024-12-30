@@ -183,6 +183,9 @@ script.on_event(defines.events.on_lua_shortcut, function (event)
         local player_storage = storage.players[event.player_index]
         if player.is_shortcut_toggled("rx_ams_toggle_shortcut") then
             player_storage.is_active = false
+            if player_storage.elements.main_frame ~= nil then
+                toggle_ui(player)
+            end
             update_speed(player)
         else
             player_storage.is_active = true
